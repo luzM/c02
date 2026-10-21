@@ -1,22 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmartiro <luz.martirosyan@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 01:00:06 by lmartiro          #+#    #+#             */
-/*   Updated: 2026/10/20 01:10:42 by lmartiro         ###   ########.fr       */
+/*   Created: 2026/10/20 00:20:45 by lmartiro          #+#    #+#             */
+/*   Updated: 2026/10/21 17:26:27 by lmartiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+char	*ft_strcpy(char *dest, char *src)
 {
-	while (*str != '\0')
+	char	*dest_start;
+
+	dest_start = dest;
+	while (*src != '\0')
 	{
-		if (((*str < 'A') || (*str > 'Z')) && ((*str < 'a') || (*str > 'z')))
-			return (0);
-		str++;
+		*dest = *src;
+		src++;
+		dest++;
 	}
-	return (1);
+	*dest = '\0';
+	return (dest_start);
 }
+/*
+int	main(void)
+{
+	char	str[30];
+	char	*result;
+
+	result = ft_strcpy(str, "Text for copy");
+	while (*result != '\0')
+	{
+		write(1, result, 1);
+		result++;
+	}
+	return (0);
+}*/
