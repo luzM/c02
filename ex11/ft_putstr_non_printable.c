@@ -6,7 +6,7 @@
 /*   By: lmartiro <luz.martirosyan@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 04:24:42 by lmartiro          #+#    #+#             */
-/*   Updated: 2026/10/22 04:41:27 by lmartiro         ###   ########.fr       */
+/*   Updated: 2026/10/22 04:48:27 by lmartiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_putstr_non_printable(char *str)
 		str++;
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_putstr_non_printable("Hello\nWorld\t!");
@@ -41,4 +41,4 @@ int	main(void)
 	ft_putstr_non_printable("\n");
 	ft_putstr_non_printable("Printable: ABC xyz 123 ~");
 	return (0);
-}
+}*/
